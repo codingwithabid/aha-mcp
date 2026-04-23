@@ -4,8 +4,8 @@ Production-ready Aha MCP server for Claude and other MCP clients.
 
 This server talks to the official Aha APIs using an Aha domain and API token over stdio, which is the transport Claude MCP expects.
 
-For a copy-paste Claude setup guide, see [CLAUDE_SETUP.md](./CLAUDE_SETUP.md).
-For endpoint purpose and API concepts, see [REST_API_REFERENCE.md](./REST_API_REFERENCE.md).
+For a copy-paste Claude setup guide, see [CLAUDE_SETUP.md](./docs/CLAUDE_SETUP.md).
+For endpoint purpose and API concepts, see [REST_API_REFERENCE.md](./docs/REST_API_REFERENCE.md).
 
 ## What it includes
 
@@ -199,18 +199,18 @@ npm run typecheck
 
 ## Troubleshooting
 
-### `AHA_DOMAIN environment variable is required`
+### AHA_DOMAIN environment variable is required
 
 Set `AHA_DOMAIN` to your Aha tenant, for example `your-company.aha.io`.
 
-### `AHA_API_TOKEN environment variable is required`
+### AHA_API_TOKEN environment variable is required
 
 Create or copy a valid Aha API token and pass it in the MCP server environment.
 
-### `Not found`
+### Not found
 
 The referenced Aha record ID, reference number, or product scope is wrong, or the token does not have access.
 
-### `Rate limited`
+### Rate limited
 
 Wait and retry. The client already retries a small number of `429` responses automatically.
