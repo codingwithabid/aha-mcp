@@ -4,8 +4,8 @@ Production-ready Aha MCP server for Claude and other MCP clients.
 
 This server talks to the official Aha APIs using an Aha domain and API token over stdio, which is the transport Claude MCP expects.
 
-For a copy-paste Claude setup guide, see [CLAUDE_SETUP.md](/Users/macbook/aha-mcp/CLAUDE_SETUP.md).
-For endpoint purpose and API concepts, see [REST_API_REFERENCE.md](/Users/macbook/aha-mcp/REST_API_REFERENCE.md).
+For a copy-paste Claude setup guide, see [CLAUDE_SETUP.md](./CLAUDE_SETUP.md).
+For endpoint purpose and API concepts, see [REST_API_REFERENCE.md](./REST_API_REFERENCE.md).
 
 ## What it includes
 
@@ -92,7 +92,7 @@ Example:
   "mcpServers": {
     "aha": {
       "command": "node",
-      "args": ["/Users/macbook/aha-mcp/build/index.js"],
+      "args": ["/path/to/aha-mcp/build/index.js"],
       "env": {
         "AHA_DOMAIN": "your-company.aha.io",
         "AHA_API_TOKEN": "your_aha_api_token",
@@ -115,9 +115,9 @@ Claude can also use a local env file instead of embedding secrets directly in MC
     "aha": {
       "command": "node",
       "args": [
-        "/Users/macbook/aha-mcp/build/index.js",
+        "/path/to/aha-mcp/build/index.js",
         "--env-file",
-        "/Users/macbook/aha-mcp/.env.local"
+        "/path/to/aha-mcp/.env.local"
       ]
     }
   }
