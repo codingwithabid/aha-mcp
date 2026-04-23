@@ -1,6 +1,6 @@
 # aha-mcp
 
-Production-ready Aha MCP server for Claude and other MCP clients.
+Aha MCP server for Claude
 
 This server talks to the official Aha APIs using an Aha domain and API token over stdio, which is the transport Claude MCP expects.
 
